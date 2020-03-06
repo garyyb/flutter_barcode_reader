@@ -4,5 +4,6 @@
     <item android:id="@+id/flash_toggle"
           android:icon="@drawable/flash_selector"
           android:title="Toggle Flash"
+          android:checkable="true"
           app:showAsAction="ifRoom" />
 </menu>

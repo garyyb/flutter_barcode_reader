@@ -38,6 +38,7 @@ class BarcodeScannerActivity : AppCompatActivity(), ZXingScannerView.ResultHandl
             when (item.itemId) {
                 R.id.flash_toggle -> {
                     scannerView.flash = !scannerView.flash
+                    item.isChecked = !item.isChecked
                     true
                 }
                 else -> {
