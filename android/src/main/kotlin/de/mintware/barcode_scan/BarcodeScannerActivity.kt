@@ -9,12 +9,13 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import android.view.MenuItem
 import android.widget.FrameLayout
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomappbar.BottomAppBar
 import com.google.zxing.Result
 import de.mintware.barcodescan.R
 import me.dm7.barcodescanner.zxing.ZXingScannerView
 
-class BarcodeScannerActivity : Activity(), ZXingScannerView.ResultHandler {
+class BarcodeScannerActivity : AppCompatActivity(), ZXingScannerView.ResultHandler {
 
     lateinit var scannerView: ZXingScannerView
 
